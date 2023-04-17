@@ -1,0 +1,26 @@
+{
+  "name": "debugger",
+  "version": "1.0.0",
+  "description": "debugger-backupsolution",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "sepherd.debugger.backupsolution",
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  
+  "devDependencies": {
+    "@electron/asar": "^3.2.4",
+    "@electron/osx-sign": "^1.0.4",
+    "electron-builder": "^22.14.13"
+  }
+}
